@@ -216,10 +216,93 @@
                         Sausage: 9,
                     },
                 },
-                // {
-                //     name: '',
-                //     ingredients: {},
-                // },
+                {
+                    name: 'Overheat Ginger Salad',
+                    ingredients: {
+                        Herb: 17,
+                        Ginger: 10,
+                        Tomato: 8,
+                    },
+                },
+                {
+                    name: 'Fancy Apple Salad',
+                    ingredients: {
+                        Apple: 8,
+                    },
+                },
+                {
+                    name: 'Immunity Leek Salad',
+                    ingredients: {
+                        Leek: 10,
+                        Ginger: 5,
+                    },
+                },
+                {
+                    name: 'Dazzling Apple Cheese Salad',
+                    ingredients: {
+                        Apple: 15,
+                        Milk: 5,
+                        Oil: 3,
+                    },
+                },
+                {
+                    name: 'Ninja Salad',
+                    ingredients: {
+                        Leek: 15,
+                        Soybeans: 19,
+                        Mushroom: 12,
+                        Ginger: 11
+                    },
+                },
+                {
+                    name: 'Heat Wave Tofu Salad',
+                    ingredients: {
+                        Soybeans: 10,
+                        Herb: 6,
+                    },
+                },
+                {
+                    name: 'Greengrass Salad',
+                    ingredients: {
+                        Oil: 22,
+                        Corn: 17,
+                        Tomato: 14,
+                        Potato: 9,
+                    },
+                },
+                {
+                    name: 'Calm Mind Fruit Salad',
+                    ingredients: {
+                        Apple: 21,
+                        Honey: 16,
+                        Corn: 12,
+                    },
+                },
+                {
+                    name: 'Fury Attack Corn Salad',
+                    ingredients: {
+                        Corn: 9,
+                        Oil: 8,
+                    },
+                },
+                {
+                    name: 'Cross Chop Salad',
+                    ingredients: {
+                        Egg: 20,
+                        Sausage: 15,
+                        Corn: 11,
+                        Tomato: 10,
+                    },
+                },
+                {
+                    name: 'Defiant Coffee-Dressed Salad',
+                    ingredients: {
+                        Coffee: 28,
+                        Sausage: 28,
+                        Oil: 22,
+                        Potato: 22,
+                    },
+                },
             ],
             Dessert: [
                 {
@@ -227,6 +310,10 @@
                     ingredients: {},
                     catchAll: true,
                 },
+                // {
+                //     name: '',
+                //     ingredients: {},
+                // },
             ],
         }
         const storedPotSize = Number(window.localStorage.getItem('potSize')) || 15;
