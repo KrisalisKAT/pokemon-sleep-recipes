@@ -37,7 +37,7 @@
                             <label x-bind:for="'ing_'+ingredient" x-text="ingredients[ingredient]"></label>
                             <input x-bind:id="'ing_'+ingredient" type="number" step="1" min="0"
                                    class="input input-bordered input-sm w-20"
-                                   x-model="ingredientQuantities[ingredient]"/>
+                                   x-model.number="ingredientQuantities[ingredient]"/>
                         </div>
                     </template>
                 </div>
