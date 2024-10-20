@@ -1,4 +1,9 @@
-# Pokemon Sleep Recipe Calculator
+# Krisalis.at
+
+This is a Laravel application intended for my personal website /
+web projects.
+
+## Pokemon Sleep Recipe Calculator
 
 This is a little utility for people (like me at time of writing) who are
 relatively new to pokemon sleep and would like some assistance calculating
