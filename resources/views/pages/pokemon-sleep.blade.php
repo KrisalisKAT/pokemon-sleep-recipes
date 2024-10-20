@@ -21,7 +21,7 @@
                         </label>
                         <div>
                             <input id="tempPotSize" type="number" step="1" x-bind:min="potSize" max="200"
-                                   class="input input-bordered input-sm" x-model="tempPotSize"/>
+                                   class="input input-bordered input-sm w-28" x-model="tempPotSize"/>
                             <button class="btn btn-outline btn-accent btn-sm" x-on:click="tempPotIncrease = 0">Reset</button>
                         </div>
                     </div>
@@ -316,10 +316,9 @@
                 // },
             ],
         }
-        const storedPotSize = Number(window.localStorage.getItem('potSize')) || 15;
         document.addEventListener('alpine:init', () => {
             Alpine.data('appData', () => ({
-                _potSize: storedPotSize,
+                _potSize: Number(window.localStorage.getItem('potSize')) || 15,
                 get potSize() {
                     return this._potSize;
                 },
@@ -335,7 +334,14 @@
                     this.tempPotIncrease = value - this._potSize;
                 },
                 hideUnavailable: false,
-                tab: 'Salad',
+                _tab: window.localStorage.getItem('recipeTab') ?? 'Salad',
+                get tab() {
+                    return this._tab;
+                },
+                set tab(value) {
+                    this._tab = value;
+                    window.localStorage.setItem('recipeTab', value);
+                },
                 recipeGroups: Object.keys(recipes),
                 ingredientQuantities: Object.fromEntries(Object.keys(ingredients).map(ing => ([ing, 0]))),
                 ingredientsTotal(recipe) {
