@@ -13,7 +13,7 @@
                         </label>
                         <input id="potSize" type="number" step="1" min="15" max="200"
                                class="input input-bordered input-sm w-28"
-                               x-model="potSize"/>
+                               x-model.number="potSize"/>
                     </div>
                     <div class="flex flex-col">
                         <label for="tempPotSize">
@@ -21,7 +21,7 @@
                         </label>
                         <div>
                             <input id="tempPotSize" type="number" step="1" x-bind:min="potSize" max="200"
-                                   class="input input-bordered input-sm w-28" x-model="tempPotSize"/>
+                                   class="input input-bordered input-sm w-28" x-model.number="tempPotSize"/>
                             <button class="btn btn-outline btn-accent btn-sm" x-on:click="tempPotIncrease = 0">Reset</button>
                         </div>
                     </div>
